@@ -1,0 +1,28 @@
+name: CI
+on: [workflow_dispatch, pull_request]
+jobs:
+  check-static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js and pnpm
+        uses: ./.github/actions/setup-node-and-pnpm
+      - name: Run Check Static
+        run: pnpm check
+  # テストが追加されたら以下のコメントアウトを外す
+  # unit-test:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - name: Setup Node.js and pnpm
+  #       uses: ./.github/actions/setup-node-and-pnpm
+  #     - name: Run Unit Test
+  #       run: pnpm test
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js and pnpm
+        uses: ./.github/actions/setup-node-and-pnpm
+      - name: Run Build
+        run: pnpm build
