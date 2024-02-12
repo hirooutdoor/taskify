@@ -39,6 +39,37 @@
         "newlines-between": "always"
       }
     ],
+    /* JSXに関するlint rules。*/
+    "react/jsx-boolean-value": "error",
+    "react/jsx-curly-brace-presence": "error",
+    "react/jsx-no-bind": "error",
+    "react/jsx-no-useless-fragment": "error",
+    "react/jsx-props-no-spreading": "error",
+    "react/jsx-no-constructed-context-values": "error",
+    "react/button-has-type": "error",
+    "react/destructuring-assignment": [
+      "error",
+      "always",
+      {
+        "ignoreClassFields": true,
+        "destructureInSignature": "always"
+      }
+    ],
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
+    "arrow-body-style": ["error", "as-needed"],
+    "func-style": "error",
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": "arrow-function"
+      }
+    ],
     "import/first": "error",
     "import/newline-after-import": "error",
     "unused-imports/no-unused-imports": "error",
