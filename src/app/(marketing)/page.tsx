@@ -1,8 +1,23 @@
 import { Medal } from 'lucide-react';
+import { Poppins } from 'next/font/google';
+import localFont from 'next/font/local';
+import Link from 'next/link';
+
+import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
+
+const headingFont = localFont({
+  src: '../../../public/fonts/font.woff2'
+});
+
+const bodyFont = Poppins({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800', '900']
+});
 
 const MarketingPage = () => (
-  <div className='flex items-center justify-center flex-col'>
-    <div className='flex items-center justify-center flex-col gap-6'>
+  <div className='flex items-center justify-center flex-col gap-4'>
+    <div className={cn('flex items-center justify-center flex-col gap-6', headingFont.className)}>
       <div className='flex items-center border shadow-sm p-4 bg-amber-100 text-amber-700 rounded-full uppercase'>
         <Medal className='h-6 w-6 mr-2' />
         No. 1 task management app
@@ -14,6 +29,18 @@ const MarketingPage = () => (
         work forward.
       </span>
     </div>
+    <div
+      className={cn(
+        'text-sm md:text-xl text-neutral-400 max-w-xs md:max-w-2xl text-center',
+        bodyFont.className
+      )}
+    >
+      Collaborate, manage projects, and reach new productivity peaks. From high rises to the home
+      office, the way your team works is unique—accomplish it all with Taskify.
+    </div>
+    <Button className='mt-6' size='lg' asChild>
+      <Link href='/sign-up'>Get Taskify for free</Link>
+    </Button>
   </div>
 );
 
