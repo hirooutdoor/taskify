@@ -4,8 +4,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ![スクリーンショット 2024-02-27 7 55 08](https://github.com/hirooutdoor/taskify/assets/24813936/cb710835-aa1d-4621-87a7-ed9ec66b2f4e)
 
+Best task management app ever.
 
+Taskify helps team move work forward.
 
+Collaborate, manage projects, and reach new productivity peaks. From high rises to the home office, the way your team works is unique—accomplish it all with Taskify.
+
+(This App is just for inspection for the new next.js 14 feature and auth and DB integration.)
 ## Getting Started
 
 First, run the development server:
