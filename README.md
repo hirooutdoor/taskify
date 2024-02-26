@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# Taskify
+
+![スクリーンショット 2024-02-27 7 55 08](https://github.com/hirooutdoor/taskify/assets/24813936/cb710835-aa1d-4621-87a7-ed9ec66b2f4e)
+
+
+
 ## Getting Started
 
 First, run the development server:
